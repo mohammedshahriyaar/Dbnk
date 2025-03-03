@@ -1,0 +1,36 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #003087; /* ICICI blue */
+}
+
+.btn-primary {
+    background-color: #f58220; /* ICICI orange */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e06e1c;
+}
+
+footer {
+    background-color: #003087;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+}

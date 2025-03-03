@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch/ATM Locator - Banking App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="container my-5">
+        <h1 class="mb-4 text-center">Branch/ATM Locator</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="locatorForm">
+                    <div class="mb-3">
+                        <label for="location" class="form-label">City or Pin Code</label>
+                        <input type="text" class="form-control" id="location" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </form>
+                <div class="mt-4">
+                    <p>Mock Result: Branches found near your location.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#locatorForm").submit(function(e) {
+                e.preventDefault();
+                alert("Branches/ATMs found! (Mock)");
+            });
+        });
+    </script>
+</body>
+</html>

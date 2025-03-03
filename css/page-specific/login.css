@@ -1,0 +1,5 @@
+/* Specific to login.html */
+form {
+    max-width: 400px;
+    margin: auto;
+}
